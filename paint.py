@@ -2,14 +2,14 @@ from diffusers import StableDiffusionPipeline
 import matplotlib.pyplot as plt
 
 # アクセストークンの設定
-access_tokens="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" # @param {type:"string"}
+access_tokens="your token" # @param {type:"string"}
  
 # モデルのインスタンス化
 model = StableDiffusionPipeline.from_pretrained("CompVis/stable-diffusion-v1-4", use_auth_token=access_tokens)
 model.to("cuda")
 
 # パラメータ入力
-prompt = "masterpiece best quality, hayper detailed girl platinum blond" #@param {type:"string"}
+prompt = "put your spell" #@param {type:"string"}
 
 #　画像出力のディレクトリ
 !mkdir outputfile
